@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--Very-Dark-Blue);
+}
+
+.titulo{
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+span{
+    font-weight: 600;
+}
+
+.texto-principal{
+    font-size: 14px;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    margin: auto;
+    margin-top: -10px;
+    width: 500px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#caixas{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
+    width: 320px;
+    height: 200px;
+    font-size: 14px;
+    margin: 10px 10px 20px 10px;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.caixa1{
+    border-top: 3px solid var(--Cyan);
+}
+
+.caixa2{
+    border-top: 3px solid var(--Red);
+}
+
+.caixa3{
+    border-top: 3px solid var(--Orange);
+}
+
+.caixa4{
+    border-top: 3px solid var(--Blue);
+}
+
+img{
+    position: relative;
+    left: 230px;
+    top: 15px;
+}
+
+.attribution { font-size: 12px; text-align: center; color: black; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1150px){
+    main{
+        display: grid;
+        place-items: center;
+    }
+}
+
